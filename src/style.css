@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+section {
+    padding-left: 220px;
+    padding-right: 220px;
+}
+nav {
+    min-width: 950px;
+    padding-bottom: 16px;
+}
+.nav__logo {
+    min-width: 37px;
+}
+.heroSection {
+    padding-top: 16px;
+}
+.nav__companyName {
+    margin-left: 10px;
+}
+.nav__dropdowns {
+    margin-left: 300px;
+    min-width: 950px;
+    font-family: "DM Sans", sans-serif;
+}
+.nav__dropdown {
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 4px;
+}
+.nav__dropdown::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: ease-in-out all 0.3s;
+}
+.nav__dropdown:hover::before {
+    width: 100%;
+}
+.nav__arrow {
+    margin-left: 10px;
+}
+.nav__dropdownItem {
+    transition: all ease-in-out 0.2s;
+    font-family: "DM Sans", sans-serif;
+}
+#solutionsDropdownButton, #resourcesDropdownButton, #pricingDropdownButton {
+    margin-left: 28px;
+}
+.nav__loginButton {
+    margin-left: 55px;
+    width: 126px;
+    height: 60px;
+    padding: 16px 40px;
+}
+button {
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+.nav__loginButton:hover {
+    background-color: #f5d57f;
+    box-shadow: 0 2px 8px rgba(4, 56, 115, 0.1);
+    transform: translateY(-2px);
+}
+.nav__tryFreeButton {
+    margin-left: 24px;
+    width: 227px;
+    height: 60px;
+    transition: background-color 0.3s ease-out;
+}
+.nav__tryFreeButton:hover {
+    transform: translateY(-2px);
+    background-color: #3a7bd5;
+
+    /* Плавное появление тени */
+    box-shadow:
+            0 5px 15px rgba(79, 156, 249, 0.4);
+    transition:
+            background-color 0.3s ease-out,
+            transform 0.3s ease-out,
+            box-shadow 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
