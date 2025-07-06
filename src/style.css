@@ -12,13 +12,12 @@
     font-style: normal;
 }
 section {
-    padding-left: 220px;
-    padding-right: 220px;
+    /*padding-left: 220px;
+    padding-right: 220px;*/
 }
 nav {
     min-width: 950px;
-    padding-bottom: 16px;
-    padding-top: 16px;
+    padding: 16px 220px 16px 220px;
 }
 .nav__logo {
     min-width: 37px;
@@ -111,33 +110,41 @@ button {
 }
 .heroSection__image {
     margin-top: 140px;
+    margin-right: 220px;
+}
+.heroSection__about {
+    padding-left: 220px;
+    position: relative;
+    background-image: url("/public/Element.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 @media (max-width: 1919px) {
     .nav__loginButton {
         margin-left: 75px;
     }
 }
-@media (max-width: 1660px) {
+@media (max-width: 1752px) {
     .nav__dropdowns {
-        margin-left: 220px;
-    }
-    section {
-        padding-left: 120px;
-        padding-right: 120px;
+        margin-left: 115px;
     }
 }
-@media (max-width: 1580px){
+@media (max-width: 1652px) {
     .nav__dropdowns {
-        margin-left: 150px;
+        margin-left: 50px;
     }
 }
-@media (max-width: 1510px) {
-    .nav__dropdowns {
-        margin-left: 110px;
+@media (max-width: 1605px) {
+    nav, .heroSection__about {
+        padding-right: 140px;
+        padding-left: 140px;
     }
-}
-@media (max-width: 1471px) {
     .nav__dropdowns {
         margin-left: 90px;
+    }
+    .heroSection__image {
+        width: 100%;
+        margin-right: 0;
     }
 }
