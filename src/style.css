@@ -18,12 +18,12 @@ section {
 nav {
     min-width: 950px;
     padding-bottom: 16px;
+    padding-top: 16px;
 }
 .nav__logo {
     min-width: 37px;
 }
 .heroSection {
-    padding-top: 16px;
     padding-bottom: 140px;
 }
 .nav__companyName {
@@ -63,7 +63,7 @@ nav {
     margin-left: 28px;
 }
 .nav__loginButton {
-    margin-left: 75px;
+    margin-left: 138px;
     width: 126px;
     height: 60px;
     padding: 16px 40px;
@@ -112,8 +112,32 @@ button {
 .heroSection__image {
     margin-top: 140px;
 }
+@media (max-width: 1919px) {
+    .nav__loginButton {
+        margin-left: 75px;
+    }
+}
 @media (max-width: 1660px) {
     .nav__dropdowns {
-        margin-left: 50px;
+        margin-left: 220px;
+    }
+    section {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+@media (max-width: 1580px){
+    .nav__dropdowns {
+        margin-left: 150px;
+    }
+}
+@media (max-width: 1510px) {
+    .nav__dropdowns {
+        margin-left: 110px;
+    }
+}
+@media (max-width: 1471px) {
+    .nav__dropdowns {
+        margin-left: 90px;
     }
 }
