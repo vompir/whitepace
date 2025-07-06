@@ -115,7 +115,7 @@ button {
 .heroSection__about {
     padding-left: 220px;
     position: relative;
-    background-image: url("dist/Element.svg");
+    background-image: url("/dist/Element.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
