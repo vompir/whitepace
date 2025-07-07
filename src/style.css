@@ -129,9 +129,15 @@ button {
 }
 .head-section-vectors {
     position: absolute;
-    top: 200px;
+    top: 140px;
     left: 0;
+    right: 0;
     z-index: 1;
+    background-image: url("../public/Element.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 614px;
 }
 .head-section__image-container {
     z-index: 2;
